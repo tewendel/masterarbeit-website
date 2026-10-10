@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Projektwebsite zur Masterarbeit Digitale Vermittlung im Museum">
+  <meta name="author" content="Teresa Wendel">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prototyp - Digitale Vermittlung im Museum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html">Digitale Vermittlung im Museum</a></h1>
+    <p>Eine Fallstudie am Museum für Gegenwartskunst Siegen</p>
+    <nav aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="projekt.html">Projekt</a></li>
+        <li><a href="prototyp.html" aria-current="page">Prototyp</a></li>
+        <li><a href="daten.html">Daten</a></li>
+        <li><a href="fazit.html">Fazit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Prototyp</h2>
+    <p>Die bestehende Anwendung zu <em>Für die Vögel</em> bildete die Grundlage für die prototypische Weiterentwicklung.
+      Der ursprüngliche Ausstellungsguide besaß 43 Werke. Für den Prototyp wurde der Umfang auf neun exemplarische
+      Werke reduziert, jeweils ein Werk aus jedem der neun Ausstellungsräume. Dabei wurden auch die unterschiedlichen Werktypen
+      berücksichtigt.</p>
+    <p>Ziel der Weiterentwicklung war es, die Projektstruktur nachvollziehbarer zu gestalten und die Vermittlungsinhalte 
+      differenziert und sturkturiert bereitzustellen. Zusätzlich sollten weiterführende Werk- und Kontextinformationen zugänglich gemacht werden.</p>
+
+    <h2>Bestehende Anwendung</h2>
+
+    <div class="bestehende-anwendung">
+      <div class="links">
+        <p>In der bestehenden Anwendung wurden Werkdaten zum Teil so gespeichert, wie sie im Interface angezeigt wurden.
+          Beispielsweise wurden die Namen der Künstler:innen und der Werktitel gemeinsam in einem Feld verwaltet. Eine
+          Orientierung an musealen Metadatenstandards oder die Verwendung von Normdaten und kontrollierten Vokabularen
+          waren nicht Teil der Datenpflege. Zudem waren die deutsche und englische Sprachfassung in getrennten
+          Anwendungen organisiert und die Projektstruktur über mehrere Anwendungen hinweg gewachsen. Dadurch entstanden
+          unübersichtliche Strukturen und teilweise schwer nachvollziehbare Benennungen. Eine Bereitstellung der Werkdaten für die externe
+          Nachnutzung war in der bestehenden Anwendung nicht vorgesehen.
+        </p>
+      </div>
+      <div class="rechts">
+        <figure>
+          <img class="kleines-bild" src="bilder/bisherige_app_2.png" alt="Werkübersicht der bisherigen Anwendung">
+          <figcaption>Werkübersicht mit 43 Werken</figcaption>
+        </figure>
+
+        <figure>
+          <img class="kleines-bild" src="bilder/bisherige_app_3.png" alt="Werkdetailseite der bisherigen Anwendung">
+          <figcaption>
+            Werkdetailseite mit David Claerbout, Birdcage (Vogelkäfig), 2023
+            Bildrechte: © VG Bild-Kunst, Bonn 2025;
+            Nicht unter CC BY-SA 4.0 lizenziert.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+
+
+    <h2>Weiterentwickelte Anwendung</h2>
+
+    <p>Nachfolgend kann der Prototyp selbst erprobt werden:</p>
+
+
+    <iframe src="https://tewendel.github.io/fdv-app-static/?archiveMode=true"
+      style="display: block; margin: 0 auto; max-width: 100%;" width="350" height="650"
+      title="Interaktiver Prototyp">
+    </iframe>
+
+
+    <h2>Funktionalitäten</h2>
+    <p>Im Prototyp wurden die Werkangaben in getrennten Datenfeldern erfasst. Die Kernfunktionalität liegt dabei in der Integration einer Audioguide- und Datenansicht.</p>
+
+    <div class="ebenen">
+      <div class="links">
+        <p><b>Audioguide</b>: Für Werkbetrachtung und Vermittlung. Enthält Audiospur, Werkabbildungen,
+          kurze Werkbeschreibung, Audioguide-Transkript sowie zusätzliche Abbildungen und deren Bildrechte.</p>
+        <p><b>Daten</b>: Für ausführlichere Werkangaben und zusätzliche Kontextinformationen.
+          Enthält die Werkmetadaten und über Wikidata bereitgestellte Informationen zu Künstler:in, Vogelart und Motiv.
+        </p>
+        <p>Die Aufteilung ermöglicht, Informationen schrittweise zu erschließen und unterschiedliche
+          Inhalts- und Nutzungstiefen innerhalb derselben Anwendung anzubieten. Beide Ansichten basieren dabei auf derselben Datenbasis.</p>
+      </div>
+      <img class="rechts abbildung" src="bilder/prototyp_werkseite.png"
+        alt="Zwei Screenshots des Prototyps: links die Audioguide-Ansicht, rechts die Datenansicht eines Werks">
+    </div>
+
+    <p>Weitere Funktionalitäten umfassen eine übersichtlichere Werkübersicht, die gemeinsame Verwaltung von deutschen und englischen Inhalten innerhalb einer
+      Anwendung, die strukturierten Werk- und Kontextinformationen mit Verweisen auf Normdaten und kontrollierte Vokabulare sowie einen CSV-Export der Werkmetadaten. 
+      Wie die Daten dafür aufbereitet wurden, zeigt die Seite <a href="daten.html">Daten</a>.</p>
+  </main>
+
+  <footer>
+    <p>Projektwebsite zur Masterarbeit von <a href="https://github.com/tewendel">Teresa Wendel</a> (2026)</p>
+    <p>Master Digitale Methodik in den Geistes- und Kulturwissenschaften | JGU Mainz / Hochschule Mainz</p>
+    <p>
+      Eigene Texte und Grafiken, soweit nicht anders gekennzeichnet, lizenziert unter
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" rel="license" target="_blank">
+        CC BY-SA 4.0
+      </a>
+    </p>
+  </footer>
+
+</body>
+
+</html>

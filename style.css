@@ -1,0 +1,228 @@
+/* Layout */
+html {
+    background-color: #f3f3f3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #ededed;
+    padding: 25px 20px;
+    border-bottom: 2px solid #888;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header h1 a {
+    color: #111;
+    text-decoration: none;
+}
+
+header p {
+    margin-top: 3px;
+    color: #555;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a[aria-current="page"] {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Links */
+a {
+    color: #333;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #000;
+}
+
+a:focus,
+summary:focus {
+    outline: 2px solid #333;
+    outline-offset: 3px;
+}
+
+/* Inhalt und Überschriften */
+main {
+    padding: 20px 20px 40px;
+}
+
+h2 {
+    margin-top: 35px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ccc;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+/* Zitate */
+blockquote {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-left: 4px solid #777;
+    background-color: #f3f3f3;
+}
+
+/* Abbildungen */
+figure {
+    margin: 25px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.abbildung {
+    width: 600px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Tabelle */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #888;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #e6e6e6;
+}
+
+/* Ausklappbare Inhalte */
+details {
+    margin: 15px 0;
+    padding: 10px 15px;
+    border: 1px solid #888;
+    background-color: #f3f3f3;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Text links, Bild rechts */
+.ebenen {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.ebenen .links,
+.ebenen .rechts {
+    width: 50%;
+    min-width: 0;
+}
+
+/* Drei Abbildungen nebeneinander */
+.bilderreihe {
+    display: flex;
+    gap: 20px;
+}
+
+/* Text links, zwei Bilder rechts */
+.bestehende-anwendung {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.bestehende-anwendung .links {
+    flex: 1;
+    min-width: 0;
+}
+
+.bestehende-anwendung .rechts {
+    flex: 2;
+    display: flex;
+    gap: 15px;
+    min-width: 0;
+}
+
+/* Regeln Bildergruppen */
+.bilderreihe figure,
+.bestehende-anwendung figure {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+.bilderreihe img,
+.bestehende-anwendung img {
+    width: 100%;
+}
+
+.bilderreihe figcaption,
+.bestehende-anwendung figcaption {
+    margin-top: 8px;
+}
+
+.bilderreihe figure {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #ededed;
+    border-top: 1px solid #aaa;
+    padding: 25px 20px;
+    color: #444;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Anpassung für Smartphones */
+@media (max-width: 700px) {
+
+    .ebenen,
+    .bilderreihe,
+    .bestehende-anwendung {
+        flex-direction: column;
+    }
+
+    .ebenen .links,
+    .ebenen .rechts,
+    .bestehende-anwendung .rechts {
+        width: 100%;
+    }
+}
