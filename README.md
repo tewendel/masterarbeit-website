@@ -4,7 +4,7 @@ Projektwebsite zur Masterarbeit *Digitale Vermittlung im Museum. Eine Fallstudie
 
 Teresa Wendel | JGU Mainz / Hochschule Mainz | 2026
 
-**[Website](https://tewendel.github.io/interkit-masterarbeit/)**  
+**[Website](https://tewendel.github.io/masterarbeit-website/)**  
 **[Interaktiver Prototyp](https://tewendel.github.io/fdv-app-static/?archiveMode=true)**
 
 ## Lizenz
